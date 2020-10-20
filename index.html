@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Muhidayat | Cool-Times</title>
+<link rel="icon" type="image/png" href="20200331_162016.png" >
+<meta name="description" content="Cool-Times Is an automatic clock saying hello">
+	
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+  <script src="javascript.js"></script>
+  <script src="all.js"></script>
+  <script src="jam.js"></script>
+  <script src="headline.js"></script>
+  <!-- ALL PLUGINS -->
+  <script src="custom.js"></script>
+  </head>
+  <body id="body">
+  <!-- Home -->
+  <div class="heading">
+  <div class="container">
+  <h1 id="Clock"></h1>
+  <h3 class="cd-headline clip is-full-width">
+  <span style="font-weight: bold; text-transform: uppercase;">
+  <script>
+	  document.write("Hy " + name) ;
+	</script>
+  </span><br>
+  <span class="cd-words-wrapper">
+  <b class="is-visible">Medio tulissimis ibis<!-- engkau berjalan paling aman ditengah --></b>
+  <b>Amor ordinem nescit <!-- cinta tidak mengenal aturan --></b>
+  <b>Ora Et Labora <!-- bekerja dan berdoa --></b>
+  <b>Memento mori<!-- ingat semua akan pergi --></b>
+  </span>
+  </h3>
+
+  <button class="btn btn-danger" onclick="alert()">Message</button>
+<br><br><center><h5>&copy; Muhidayat - Tmvn </h5></center>
+  <!--
+	<a href="sunin.png" download><button class="btn btn-danger">Reply Message</button></a>-->
+  </div>
+  <!--  End Container -->
+  </div>
+  <div class="alert" id="alert">
+  	<div class="mid">
+  		<div class="box-top">
+  			<p class="step">?</p>
+  			<p class="header">Hy Kartika</p>
+  			<div class="line"></div>
+  			<p class="desc">
+  				Sebelum ke pertanyaan, kamu harus janji jawab dengan jujur ya<br>
+  				Gaboleh bohong_<
+  			</p>
+  			<div class="tombol">
+  				<button class="next" onclick="quest1()">Next</button>
+  				<button class="stop" onclick="closealert()">Close</button>
+  			</div>
+  			<div class="box-bot">
+  				<img class="box-bot-img" src="tika.jpg">
+  				<div class="tulisan">
+  					<p class="hikun"><i>- kartika</i></p>
+  				</div>
+  				<p>
+  			</div>
+  		</div>
+  	</div>
+  </div>
+  
+  <div class="alert" id="quest1">
+  	<div class="mid">
+  		<div class="box-top">
+  			<p class="step">1</p>
+  			<p class="header">Pertanyaan 1</p>
+  			<div class="line"></div>
+  			<p class="desc">
+  				Kamu sekarang kangen aku, trus pengen ketemu sama aku gak ?
+  			</p>
+  			<div class="tombol">
+  				<button class="next" onclick="quest2()">Pengenn</button>
+  				<button class="stop" onclick="closequest1()">Enggakk</button>
+  			</div>
+  			<div class="box-bot">
+  				<img class="box-bot-img" src="tika1.jpg">
+  				<div class="tulisan">
+  					<p class="hikun"><i>- kartika</i></p>
+  				</div>
+  			</div>
+  		</div>
+  	</div>
+  </div>
+  
+  <div class="alert" id="quest2">
+  	<div class="mid">
+  		<div class="box-top">
+  			<p class="step">2</p>
+  			<p class="header">Pertanyaan 2</p>
+  			<div class="line"></div>
+  			<p class="desc">
+  				Kalo udah ketemu, pengen aku ajak jalan keliling surabaya gak ?
+  			</p>
+  			<div class="tombol">
+  			<button class="next" onclick="quest3()">Pengenn</button>
+  			<button class="stop" onclick="closequest2()">Enggakk</button>
+  			</div>
+  			<div class="box-bot">
+  				<img class="box-bot-img" src="tika2.jpg">
+  				<div class="tulisan">
+  					<p class="hikun"><i>- kartika</i></p>
+  				</div>
+  			</div>
+  		</div>
+  	</div>
+  </div>
+ 
+  <div class="alert" id="quest3">
+ 	 <div class="mid">
+ 		 <div class="box-top">
+ 			 <p class="step">3</p>
+ 			 <p class="header">Pertanyaan 3</p>
+ 			 <div class="line"></div>
+ 			 <p class="desc">
+ 				 Setelah jalan jalan keliling surabaya, pengen coba makanan favorit aku gak ? 
+ 			 </p>
+ 			 <div class="tombol">
+ 				 <button class="next" onclick="quest4()">Pengenn</button>
+ 				 <button class="stop" onclick="closequest3()">Enggakk</button>
+ 			 </div>
+ 			 <div class="box-bot">
+ 				 <img class="box-bot-img" src="tika3.jpg">
+ 			 	 <div class="tulisan">
+ 			 	 	 <p class="hikun"><i>- kartika</i></p>
+ 		 	 	 </div>
+ 		 	 </div>
+ 		 </div>
+ 	 </div>
+ </div>
+
+ <div class="alert" id="quest4">
+  	 <div class="mid">
+  		 <div class="box-top">
+  			 <p class="step">4</p>
+  			 <p class="header">Pertanyaan 4</p>
+  			 <div class="line"></div>
+  			 <p class="desc">
+  				 Pengen gak, Abiss makan kita tunggu sampe sore biar perjalanan pulang
+  				 bisa liat sunsettt ?
+  			 </p>
+  			 <div class="tombol">
+  				 <button class="next" onclick="quest5()">Pengenn</button>
+  				 <button class="stop" onclick="closequest4()">Enggak</button>
+  			 </div>
+  		 	 <div class="box-bot">
+  				 <img class="box-bot-img" src="tika4.jpg">
+  				 <div class="tulisan">
+  				 	<p class="hikun"><i>- kartika</i></p>
+  				 </div>
+  			 </div>
+  		 </div>
+  	 </div>
+  </div>
+ 
+  <div class="alert" id="alert2">
+  <div class="mid">
+  <div class="box-top">
+  <p class="step">?</p>
+  <p class="header">Muhidayat</p>
+  <div class="line"></div>
+  <p class="desc">
+  	Aku juga pengennn 🙈 <br>
+  	Makasih udah sampe akhir, nih aku kasih hadiah 🙈
+  </p>
+  <div class="tombol">
+  <button class="next" onclick="alert2()">Surprise</button>
+  </div>
+  <div class="box-bot">
+  <img class="box-bot-img" src="user.jpg">
+  <div class="tulisan">
+  <p class="hikun"><i>- muhidayat</i></p>
+  </div>
+  </div>
+  </div>
+  </div>
+  </div>
+
+<!-- lup lup -->
+  <div class="alert" id="alert3" style="background-image:url(bglove.gif); background-repeat:no-repeat; background-size:cover;">
+  <div class="mid">
+  <div class="box-top" style="background:transparent;">
+  <img src="love.gif" class="surprise-img">
+  <p class="surprise-desc">
+  	Nih tak kasih lup lup biar semangatttt<br>I Love You
+  </p>
+  <div class="surprise-tombol">
+  <button class="stop" onclick="closealert3()">Close</button>
+  </div>
+  </div>
+  </div>
+  </div>
+ 
+ <!-- alert tolak -->
+  <div class="alert" id="alert4" style="background-image:url(bgtolak.jpg);background-size:cover;background-repeat:no-repeat;">
+  <div class="mid">
+  <div class="box-top" style="border:1px solid #f12711; box-shadow:0 0 10px #f12711;">
+  <p class="step" style="background:linear-gradient(135deg, rgba(241,39,17,1) 0%, rgba(245,175,25,1) 100%);">X</p>
+  <p class="header">Bjirr Ditolak</p>
+  <div class="line" style="background:linear-gradient(135deg, rgba(241,39,17,1) 0%, rgba(245,175,25,1) 100%);"></div>
+  <p class="desc">
+  	Yahhh ditolak :) <br>Ya gaapa lah semoga bisa cari yang lebih baik buat kamuu
+  </p>
+  <div class="tombol">
+  <button class="stop" onclick="closealert4()" style="border:2px solid #f5af19; color:#f5af19;">Dahlah</button>
+  </div>
+  <div class="box-bot" style="border:1px solid #f12711; box-shadow:0 0 10px #f12711;">
+  <img class="box-bot-img" src="nf.jpg">
+  <div class="tulisan">
+  <p class="hikun"><i>- not found</i></p>
+  </div>
+  </div>
+  </div>
+  </div>
+  </div>
+  
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<!-- ALL JS FILES -->
+</body>
+</html>
